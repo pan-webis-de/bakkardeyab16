@@ -48,6 +48,14 @@ The output directory will contain .xml files one file for each file of the datas
 
 which is fortelling the age and the gender of the an author of some specific file. This format is suitable to do the evaluation of the tira test.
 
+**Links:**
+TIRA:
+http://www.tira.io/
+**PAN16:**
+http://pan.webis.de/index.html
+**CLEF16**
+http://clef2016.clef-initiative.eu/
+
 
 
 
