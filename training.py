@@ -95,7 +95,7 @@ def main(argv):
     destiny_folder = argv[0]
     truth_file = argv[1]
 
-    number_of_features = 100
+    number_of_features = 10000
 
     # create the bag of words if needed
 
