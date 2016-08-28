@@ -1,6 +1,6 @@
 # cobicaduarte16
 
-**First step**
+##First step
 
 
 
@@ -15,7 +15,7 @@ PAN16 is a folder which contains all the files and resides in the same path of t
 This step works on converting the files from .xml format to .txt format producing a folder "compiled_dataset".
 
 
-**Second step**
+##Second step
 
 		javac ReplaceSpecialStrings.java
 
@@ -27,7 +27,7 @@ For example @username will be replaced by _MENTION_TAG.
 
 It will produce a folder "tagged_dataset" which contains the tagged files.
 
-**Third step**
+##Third step
 
 		python3 training.py ./tagged_dataset/ path_to_truth_file
 
@@ -36,13 +36,13 @@ the training phase makes use of the preparing module "preparing_module.py"
 
 After finishing this phase we get a .pkl model file "model.pkl" which will be used later in the testing pahse.
 
-**Fourth step**
+##Fourth step
 
-This phase we test our model which was produced in the third step. We can test the model on the same dataset which was used to generate it. This will make use of the preparing module for testing phase "preparing_module_testing.py"  
+This phase we test our model which was produced in the third step. We can test the model on the same dataset which was used to generate it. This will make use of the preparing module for testing phase "preparing_module_testing.py" 
 
 		python3 testing.py ./tagged_dataset/ ./model.pkl ./output/
 
-The output directory will contain .xml files one file for each file of the dataset. For example:
+The output directory will contain .xml files one file for each file of the dataset. For example: 
 
 		<author id="{0a9e35fd6f123137d585a482f2484d8e}" type="twitter" lang="en" age_group="35-49" gender="male"/>
 
