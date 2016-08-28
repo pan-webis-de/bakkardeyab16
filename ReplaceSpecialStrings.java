@@ -26,7 +26,7 @@ public class ReplaceSpecialStrings {
 
         ReplaceSpecialStrings rss = new ReplaceSpecialStrings();
 
-        rss.readFeelingList();
+        //rss.readFeelingList();
 
         File folder = new File("compiled_dataset");
         File[] listOfFiles = folder.listFiles();
