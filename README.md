@@ -34,6 +34,27 @@ It will produce a folder "tagged_dataset" which contains the tagged files.
 This step will get the tagged files produced by the second step as an input and train a model and produce a .pkl model file.
 the training phase makes use of the preparing module "preparing_module.py"
 
+After training, a classification report will be produced. For example, a classification report after training using the PAN16 dataset:
+		Detailed classification report:
+
+		The model is trained on the full development set.
+		The scores are computed on the full evaluation set.
+
+        	precision    recall  f1-score   support
+
+        		1       0.00      0.00      0.00         2
+        		2       0.30      0.23      0.26        26
+        		3       0.31      0.52      0.39        27
+        		4       0.25      0.08      0.12        12
+        		5       0.00      0.00      0.00         1
+        		6       0.00      0.00      0.00         2
+        		7       0.41      0.46      0.44        26
+        		8       0.31      0.32      0.31        34
+        		9       0.33      0.21      0.26        14
+
+		avg / total       0.31      0.33      0.31       144
+
+
 After finishing this phase we get a .pkl model file "model.pkl" which will be used later in the testing pahse.
 
 ##Fourth step
